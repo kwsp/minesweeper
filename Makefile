@@ -1,7 +1,7 @@
 TARGET=minesweeper
 
 $(TARGET): main.cc
-	g++ main.cc -o $(TARGET)
+	g++ -std=c++17 main.cc -o $(TARGET)
 
 .PHONY: clean
 clean:
