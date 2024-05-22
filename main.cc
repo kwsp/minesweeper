@@ -24,9 +24,11 @@ Gameplay:\n\
                                "",
                                VERSION);
 
-#define BEGINNER 0
-#define INTERMEDIATE 1
-#define ADVANCED 2
+enum DIFFICULTY {
+  BEGINNER = 0,
+  INTERMEDIATE,
+  ADVANCED,
+};
 
 class Board {
 public:
