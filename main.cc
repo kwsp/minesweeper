@@ -190,7 +190,7 @@ private:
     // Print col numbers
     printf("    ");
     for (int i = 0; i < _side; ++i)
-      printf("  %d", i);
+      printf(" %2d", i);
     printf("\n    ");
 
     // Print separator
@@ -200,7 +200,7 @@ private:
 
     // Print row numbers and rows
     for (int row = 0; row < _side; ++row) {
-      printf("%d  | ", row);
+      printf("%2d | ", row);
 
       if (type == 'c') {
         for (T &c : board[row]) {
